@@ -1,5 +1,6 @@
 from tracemap.graph.node import ExecutionNode
 from tracemap.runtime.frame_runtime import FrameRuntime
+from tracemap.filters.files import should_trace
 
 
 class TraceHook:
