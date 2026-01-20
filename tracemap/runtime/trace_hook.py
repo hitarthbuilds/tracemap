@@ -29,11 +29,15 @@ class TraceHook:
     # -------------------------
     # Event handlers
     # -------------------------
-
     def _on_call(self, frame):
+        filename = frame.f_code.co_filename
+
+        if not should_trace(filename):
+            return
+
         node = ExecutionNode(
             function=frame.f_code.co_name,
-            file=frame.f_code.co_filename,
+            file=filename,
             line_start=frame.f_lineno,
         )
         fr = FrameRuntime(frame, node)
