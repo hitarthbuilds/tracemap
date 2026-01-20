@@ -16,6 +16,10 @@ def trace(code: str) -> ExecutionGraph:
     sys.settrace(hook)
     try:
         exec(code, {})
+    except Exception:
+    # Swallow user exceptions.
+    # They are already recorded in the execution graph.
+        pass
     finally:
         sys.settrace(None)
 
