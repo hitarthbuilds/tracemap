@@ -1,9 +1,0 @@
-README.md
-pyproject.toml
-tracemap/__init__.py
-tracemap/__main__.py
-tracemap/api.py
-tracemap.egg-info/PKG-INFO
-tracemap.egg-info/SOURCES.txt
-tracemap.egg-info/dependency_links.txt
-tracemap.egg-info/top_level.txt
