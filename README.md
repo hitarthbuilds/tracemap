@@ -11,3 +11,12 @@ It captures:
 and exposes them as a structured execution graph.
 
 This is a developer intelligence tool, not a debugger.
+
+
+## Usage
+
+Trace execution of a Python file and output a structured runtime snapshot:
+
+```bash
+python -m tracemap your_file.py > snapshot.json
+
