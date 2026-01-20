@@ -8,6 +8,7 @@ version = "0.1.0"
 description = "Python execution tracing and runtime analysis engine"
 readme = "README.md"
 requires-python = ">=3.10"
+
 authors = [
     { name = "Hitarth Desai" }
 ]
@@ -15,4 +16,11 @@ authors = [
 dependencies = []
 
 [tool.setuptools]
-packages = ["tracemap"]
+packages = [
+    "tracemap",
+    "tracemap.api",
+    "tracemap.graph",
+    "tracemap.runtime",
+    "tracemap.export",
+    "tracemap.semantics",
+]
